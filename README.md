@@ -1,23 +1,21 @@
-# Credit Risk Modeling for Loan Default Prediction
+# Loan Default Prediction Using XGBoost and SMOTE
 
-## Overview
-This project aims to develop a machine learning model for predicting loan defaults, a key aspect of credit risk modeling. The dataset used (`bankloans.csv`) contains information on loan applicants, and the task is to predict whether a loan applicant will default based on various features. The project involves data preprocessing, model development, evaluation, and comparison using two machine learning algorithms: Random Forest and XGBoost.
+## 📄 Project Overview
+This project leverages machine learning to predict loan defaults using a dataset of borrower attributes. The model is built with **XGBoost**, a gradient boosting algorithm, and addresses class imbalance through **SMOTE** (Synthetic Minority Over-sampling Technique). 
 
-## Key Insights:
-- The Random Forest and XGBoost classifiers were both effective in predicting loan defaults with high accuracy.
-- XGBoost achieved a slightly higher AUC-ROC score, indicating better model performance in distinguishing between default and non-default classes.
+The final model achieves **99% accuracy** and an **ROC-AUC score of 0.999**, making it a powerful tool for **credit risk assessment** and **lending decisions**.
 
-## Skills Learned:
-- **Credit Risk Modeling**: Applied machine learning to predict loan defaults.
-- **Data Preprocessing**: Managed missing values, scaled features, and split data into training and testing sets.
-- **Model Training and Evaluation**: Used Random Forest and XGBoost for classification and evaluated models using accuracy, AUC-ROC, and classification report.
-- **Python Libraries**: Worked with pandas, scikit-learn, and XGBoost for modeling.
+## ⚙️ Features
+- **XGBoost Model:** Optimized with hyperparameter tuning for maximum predictive performance.
+- **SMOTE for Class Imbalance:** Balances the dataset to improve default detection.
+- **Performance Metrics:** Classification report, accuracy, ROC-AUC score.
+- **Feature Importance Analysis:** Identifies key factors influencing loan defaults.
 
-## Future Work
-- **Hyperparameter Tuning**: Explore fine-tuning model parameters (e.g., grid search or random search) to improve performance.
-- **Model Interpretability**: Implement SHAP or LIME to understand model predictions and improve transparency.
-- **Additional Models**: Experiment with other models like logistic regression, SVM, or neural networks.
+## 📊 Model Performance
+- **Accuracy:** 99%
+- **ROC-AUC Score:** 0.999
+- **Precision (Class 1):** 88%
+- **Recall (Class 1):** 97%
 
-
-## Acknowledgments
-- Dataset: `bankloans.csv` (publicly available for credit risk prediction tasks).
+## 📌 Conclusion
+This machine learning model can be applied by financial institutions to make more accurate predictions regarding loan defaults, helping optimize lending decisions and manage credit risk effectively.
